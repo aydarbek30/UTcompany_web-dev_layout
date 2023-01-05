@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+}
+
+.hero-bg {
+    background: #307d99 url('../UT/UT3.jpg');
+    color: white;
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+header {
+    padding: 3em 0;
+}
+
+.hero-bg a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+section {
+    margin: 0 1em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em;
+}
+
+h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1 span::before {
+    content: ' ';
+    position: absolute;
+    width: 12.2em;
+    background: black;
+    height: 1.2em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+.hero-bg p {
+    font-weight: bold;
+    margin: 1 9em 2em;
+}
+
+.form-container {
+    background-color: white;
+    margin: 2em -1em 0;
+    padding: 2em;
+}
+
+label {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+input[type=text] {
+    border: 1px solid blue;
+    width: 80%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 2em;
+    margin-top: 1.2em;
+}
+
+.form-container p {
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    margin-top: .3em;
+}
+
+input[type=button] {
+     background-color: orange;
+     border: none;
+     width: 50%;
+     color: black;
+     font-weight: bold;
+     padding: 1em .1em;
+     border-radius: .8em;
+     font-size: 1.1em;
+     cursor: pointer;
+}
+
+.О {
+    margin: 1;
+    font-weight: bold;
+}
+
+.right-col {
+    text-align: center;
+    margin: 3em 1em;
+}
+
+h2 {
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+img {
+    width: 70%;
+}
+
+p {
+    line-height: 2em;
+}
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.9);
+    z-index: 1;
+    place-content: center;
+    color: white;
+    display: none;
+    opacity: 0;
+    
+}
+
+.animate-overlay {
+    animation: overlay 3s forwards;
+}
+
+@media (min-width: 730px) {
+
+    section {
+        margin: 0 4em;
+    }
+    .form-container {
+        margin: 2em -4em 0;
+    }
+}
+
+@media (min-width: 930px) {
+
+   .hero-bg {
+       text-align: left;
+    }
+
+    .hero-bg p{
+        margin: 0 0 3em;
+    }
+
+    .hero-bg section{
+        width: 65%;
+    }
+}
+
+.top {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-2em)
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-2em)
+    }
+}
+
+@keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

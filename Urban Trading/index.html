@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="css/main.css">
+
+ </head>
+
+ <body>
+     <div class="overlay" id="overlay">
+        <h3>Я ищу, подожди...</h3>
+     </div>
+
+     <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="http://127.0.0.1:5500/index.html?city=прпр">Urban-Trading</a>
+                
+            </header>
+            <h1>
+                <span>Дистрибьюторская Компания</span>
+            </h1>
+            
+                <p><b>На рынке с 2020 года &#129309</b></p>
+                <p><b>Оптовая/розничная торговля &#129309</b></p>
+                <p><b>Мировые бренды &#129309</b></p>
+                <p><b>Сертифицированная продукция &#129309</b></p>
+
+                <div class="form-container">
+                  <form action="">
+                    <div class="form-left">
+                        <label for="city">Напиши имя товара</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "Cezaro"</p>
+                    </div>
+
+                        <input type="button" value="Найти товар" id="cta-btn">
+                    </form>
+                </div>
+        </section>
+     </div>
+
+     <section class="О нас">
+        <div class="right-col">
+            <h2>О нас</h2>
+            <p>Urban-Trading: это не просто малый бизнес, это начало истории как самой популярной и узнаваемой дистрибьюторской компании во всем СНГ.</p>
+        </div>
+        <img src="UT/UT.jpg" alt="Picture of Kyrgyz guys">
+     </section>
+
+ 
+     <script>
+
+    let btn = document.getElementById('cta-brn');
+    let boverlay = document.getElementById('overlay');
+
+    btn.addEventListener('click', ()=> {
+        overlay.style.display = 'grid';
+        overlay.classList.add('animate.overlay')
+    })
+
+     </script>
+ </body>
+ </html>
+
+
+
+
